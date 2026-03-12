@@ -12,12 +12,6 @@ spring:
   kafka:
     # 设置接入点，请通过控制台获取对应Topic的接入点
     bootstrap-servers: alikafka-post-cn-n1e4ounyr002-1-vpc.alikafka.aliyuncs.com:9092,alikafka-post-cn-n1e4ounyr002-2-vpc.alikafka.aliyuncs.com:9092,alikafka-post-cn-n1e4ounyr002-3-vpc.alikafka.aliyuncs.com:9092
-    config:
-      # hostname校验改成空
-      ssl:
-        endpoint:
-          identification:
-            algorithm: ""
     producer:
       # 这里填的是Topic，实际发送时，请在控制台申请之后填写,
       # topic: test-topic

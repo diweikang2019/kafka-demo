@@ -10,8 +10,6 @@ public class PropertiesConfig {
 
     @Value("${spring.kafka.bootstrap-servers}")
     private String kafkaBootstrapServer;
-    @Value("${spring.kafka.config.ssl.endpoint.identification.algorithm}")
-    private String sslEndpointIdentificationAlgorithm;
 
     /**
      * 生产者配置

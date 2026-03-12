@@ -37,9 +37,6 @@ public class KafkaProducerConfig {
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
-        //hostname校验改成空
-        props.put(SslConfigs.SSL_ENDPOINT_IDENTIFICATION_ALGORITHM_CONFIG, propertiesConfig.getSslEndpointIdentificationAlgorithm());
-
         props.put(ProducerConfig.RETRIES_CONFIG, propertiesConfig.getKafkaProducerRetries());
         props.put(ProducerConfig.RECONNECT_BACKOFF_MS_CONFIG, propertiesConfig.getKafkaProducerReconnectBackoffMs());
         props.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, propertiesConfig.getKafkaEnableIdempotence());
