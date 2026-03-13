@@ -23,7 +23,6 @@ public class PropertiesConfig {
     @Value("${spring.kafka.producer.enable-idempotence}")
     private Boolean kafkaEnableIdempotence;
 
-
     /**
      * 消费组配置
      */
@@ -45,6 +44,4 @@ public class PropertiesConfig {
     private Boolean kafkaConsumerBatchListener;
     @Value("${spring.kafka.listener.concurrency}")
     private Integer kafkaConsumerConcurrency;
-
-
 }
